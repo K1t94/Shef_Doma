@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", Arial, sans-serif;
+  max-width: 840px;
+  font-weight: 400;
+  margin: auto;
+  padding-right: 200px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  padding-top: 80px;
+  margin-bottom: 76px;
+}
+
+.logo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.logo__wrapper li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.logo__wrapper li:nth-child(2) {
+  margin-left: -1px;
+  margin-top: -6px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  font-weight: 400;
+  font-size: 48px;
+  color: #414042;
+  line-height: 57px;
+}
+
+p {
+  margin: 0 0 60px 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+p img {
+  width: 23px;
+}
+
+.button {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #6cc24a;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 16.5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+
+main p:last-of-type {
+  display: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.link {
+  color: #6cc24a;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 610px;
+    padding-right: 110px;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 36px;
+  }
+
+  p img {
+    width: 18px;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
+  main p:last-of-type {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    max-width: 280px;
+    padding-right: 0;
+  }
+
+  header {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .logo__wrapper {
+    width: 280px;
+  }
+
+  .logo__wrapper li:first-child {
+    margin-right: 19px;
+  }
+
+  .logo__wrapper li:first-child img {
+    width: 71px;
+  }
+
+  .logo__wrapper li:nth-child(2) {
+    margin-right: 20px;
+  }
+
+  .logo__wrapper li:nth-child(2) img {
+    width: 29px;
+  }
+
+  .logo__wrapper li:last-child img {
+    width: 142px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 16.5px;
+    margin-bottom: 36px;
+  }
+
+  p img {
+    width: 14px;
+  }
+
+  main p:last-of-type {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    width: 280px;
+    margin: auto;
+    text-align: center;
+  }
+}
